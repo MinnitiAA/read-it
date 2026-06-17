@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iTunes!</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #results {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .card{
+            border: 1px solid #ccc;
+            padding: 12px;
+            width: 170px;
+            text-align: center;
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Itunes Search</h1>
+
+    <form id="search-form">
+        <input type="text" id="searchTerm" placeholder="Search on Itunes! ">
+
+        <select id="mediaType">
+            <option value="all">All</option>
+            <option value="music">Music</option>
+            <option value="audiobook">Audiobook</option>
+            <option value="podcast">Podcast</option>
+            <option value="movie">Movie</option>
+            <option value="tvShow">Tv Show</option>
+            <option value="ebook">eBook</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="ajax.js"></script>
+</body>
+</html>
